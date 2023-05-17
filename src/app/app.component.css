@@ -1,0 +1,19 @@
+.lista {
+    margin-top: 80px !important;
+    margin: 40px;
+}
+
+.tituloHome {
+    color: white;
+}
+
+.navHome {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+
+.btnCreate {
+    margin-right: 20px;
+}

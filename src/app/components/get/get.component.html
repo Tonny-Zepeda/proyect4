@@ -1,0 +1,38 @@
+<app-put *ngIf="!viewDelete && viewPut"></app-put>
+<app-delete *ngIf="viewDelete && !viewPut"></app-delete>
+
+<button *ngIf="viewDelete || viewPut" type="button" class="btn btn-primary btnCreate" (click)="viewGet()">
+    Regresar
+</button>
+
+<ul class="list-group lista" *ngIf="!viewDelete && !viewPut">
+    <li *ngFor="let product of products; let index = index" class="list-group-item list-group-item-secondary">
+        <div class="d-flex">
+            <p>Codigo:</p>
+            <p class="codigo">{{product.proCodigo}}</p>
+        </div>
+        <div class="d-flex">
+            <p>Nombre:</p>
+            <p class="codigo"> {{product.proNombre}}</p>
+        </div>
+        <div class="d-flex">
+            <p>Descripcion:</p>
+            <p class="codigo">{{product.proDescripcion}}</p>
+        </div>
+        <div class="d-flex">
+            <p>Precio:</p>
+            <p class="codigo">Q. {{product.proPrecio}}</p>
+
+        </div>
+        <div class="d-flex">
+            <button type="button" class="btn btn-primary btnCreate" (click)="viewPutFunction(product)">
+                Actualizar
+            </button>
+            <button type="button" class="btn btn-danger btnCreate" (click)="viewDeleteFunction(product, index)">
+                Eliminar
+            </button>
+        </div>
+
+    </li>
+
+</ul>

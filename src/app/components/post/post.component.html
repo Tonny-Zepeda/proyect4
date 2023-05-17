@@ -1,0 +1,17 @@
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="product.proNombre">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Descripcion</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="product.proDescripcion">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Precio</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="product.proPrecio">
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" (click)="createProduct()">
+    Crear
+</button>

@@ -5,7 +5,7 @@ import { ProductInterface } from '../interfaces/product.interface';
 @Injectable()
 export class CrudService {
 
-    private urlBase = "https://localhost:7171/api/"
+    private urlBase = "https://localhost:7054/api/"
 
     //Dexlaracion de intancia de http
     constructor(private _http: HttpClient) {
